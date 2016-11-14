@@ -1,3 +1,5 @@
+# coding: utf-8
+
 import httplib2
 import day_menu
 import string
