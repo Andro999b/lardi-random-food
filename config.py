@@ -20,9 +20,10 @@ prefered_food = [
     ("рис с маслом", FoodType.main_course, 1),
     ("плов с курицей", FoodType.main_course, 1),
     ("куриные треугол", FoodType.garnish, 1.5),
+    ("cтейк куриный", FoodType.garnish, 1.5),
     ("зразы с мясом", FoodType.garnish, 1),
     ("нагетсы куриные", FoodType.garnish, 1),
-    ("котлета куриная", FoodType.garnish, 1),
+    ("котлета куриная", FoodType.garnish, 0.5),
     ("котлета по-киевски", FoodType.garnish, 1),
     ("котлета фаршированая сыром", FoodType.garnish, 1),
     ("эскалоп с овощами", FoodType.garnish, 1),
@@ -30,8 +31,11 @@ prefered_food = [
     ("говядина в соусе", FoodType.garnish, 1),
     ("свинина в соусе", FoodType.garnish, 1),
     ("филе куриное с помидором", FoodType.garnish, 1),
-    ("голубцы с мясом и рисом", FoodType.garnish, 0)
+    ("голубцы с мясом и рисом", FoodType.garnish, 0),
+    ("филе куриное с помидором", FoodType.garnish, 1)
 ]
+
+minimal_similarity = 80
 
 menu_plans = [
     [FoodType.appetizer, FoodType.main_course, FoodType.garnish],

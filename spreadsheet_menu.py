@@ -34,7 +34,7 @@ def make_day_order(gapi, spreadsheet_id, sheet_properties):
     rows = [(index, row[0]) for index, row in enumerate(result['values']) if len(row) > 0]
     available_menu = [row[1] for row in rows]
 
-    plan = day_menu.plan(available_menu, 50)
+    plan = day_menu.plan(available_menu, 1)
     print(plan)
 
     rows_nums = [next(row[0] for row in rows if row[1] is food_name) + row_index_start for food_name in plan[1]]
