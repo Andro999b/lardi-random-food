@@ -53,8 +53,9 @@ def plan(available_food, perception):
                 else:
                     break
 
-            summary_score += best_score
-            planned.add(random.choice(best_matches))
+            if best_matches:
+                summary_score += best_score
+                planned.add(random.choice(best_matches))
 
         result_plans.append((summary_score, planned))
 
@@ -64,8 +65,6 @@ def plan(available_food, perception):
     top_score = result_plans[0][0]
     # similar plans
     winning_plans = [p for p in result_plans if (top_score - p[0]) <= perception]
-
-    print(winning_plans)
 
     return random.choice(winning_plans)
 

@@ -42,4 +42,4 @@ menu_plans = [
     [FoodType.main_course, FoodType.garnish, FoodType.garnish]
 ]
 
-user_char = "P"
+user_char = "N"
